@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="FairPay — receipt splitting for iOS and Android." />
+  <link rel="canonical" href="https://sabar2001.github.io/FairPay-docs/" />
+  <title>FairPay</title>
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --fg: #f5f5f7;
+      --muted: #a1a1aa;
+      --accent: #5b9dff;
+      --border: #1f1f23;
+      --max: 520px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 24px;
+    }
+    main { max-width: var(--max); text-align: center; }
+    h1 { font-size: 36px; letter-spacing: -0.03em; margin: 0 0 8px; }
+    h1 span { color: var(--accent); }
+    p { color: var(--muted); font-size: 18px; line-height: 1.5; }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 32px;
+    }
+    a {
+      color: var(--fg);
+      text-decoration: none;
+      padding: 12px 20px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      font-weight: 500;
+    }
+    a:hover { border-color: var(--accent); color: var(--accent); }
+    a.primary { background: #fff; color: #000; border-color: #fff; }
+    a.primary:hover { opacity: 0.9; color: #000; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>FAIR <span>PAY</span></h1>
+    <p>Split receipts fairly — tax and tip included.</p>
+    <nav>
+      <a class="primary" href="./support.html">Support</a>
+      <a href="./privacy.html">Privacy Policy</a>
+      <a href="mailto:sabar2001@gmail.com">Contact</a>
+    </nav>
+  </main>
+</body>
+</html>

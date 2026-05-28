@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="description" content="Support, FAQ, and account-deletion instructions for FairPay — the receipt-splitting app for iOS and Android." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sabar2001.github.io/FairPay-docs/support.html" />
+
+  <title>FairPay — Support</title>
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #0a0a0a;
+      --muted: #5b5b66;
+      --border: #e6e6ea;
+      --accent: #0f62fe;
+      --card: #f7f7f9;
+      --code: #f0f0f3;
+      --radius: 14px;
+      --max: 720px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0a0a0a;
+        --fg: #f5f5f7;
+        --muted: #a1a1aa;
+        --border: #1f1f23;
+        --accent: #5b9dff;
+        --card: #131316;
+        --code: #1a1a1f;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    main { max-width: var(--max); margin: 0 auto; padding: 32px 20px 80px; }
+    header { padding-top: 12px; padding-bottom: 8px; }
+
+    h1 { font-size: 32px; line-height: 1.15; margin: 8px 0 4px; letter-spacing: -0.02em; }
+    h2 { font-size: 22px; line-height: 1.25; margin: 40px 0 12px; letter-spacing: -0.01em; }
+    h3 { font-size: 17px; margin: 18px 0 6px; }
+    p, li { color: var(--fg); }
+    .lede { color: var(--muted); font-size: 18px; margin: 0 0 8px; }
+    .muted { color: var(--muted); }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover, a:focus { text-decoration: underline; }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      padding: 4px 8px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      margin: 12px 0;
+    }
+
+    details {
+      border-top: 1px solid var(--border);
+      padding: 14px 2px;
+    }
+    details:last-of-type { border-bottom: 1px solid var(--border); }
+    details > summary {
+      cursor: pointer;
+      list-style: none;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary::after {
+      content: "+";
+      font-size: 22px;
+      line-height: 1;
+      color: var(--muted);
+      transition: transform 120ms ease;
+    }
+    details[open] > summary::after { content: "−"; }
+    details > div.answer { padding-top: 10px; color: var(--fg); }
+
+    code, kbd {
+      background: var(--code);
+      padding: 1px 6px;
+      border-radius: 6px;
+      font-size: 0.92em;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #fff;
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+    .cta:hover { text-decoration: none; opacity: 0.92; }
+
+    ul { padding-left: 22px; }
+    ul li + li { margin-top: 4px; }
+
+    footer {
+      margin-top: 56px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    footer nav a { color: var(--muted); margin-right: 14px; }
+
+    /* Skip-link for accessibility */
+    .skip {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+    }
+    .skip:focus {
+      left: 16px;
+      top: 16px;
+      background: var(--bg);
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <main id="content">
+    <header>
+      <span class="badge">FairPay Support</span>
+      <h1>How can we help?</h1>
+      <p class="lede">Answers to common questions, and a direct line to a human when you need one.</p>
+      <p style="margin-top: 18px;">
+        <a class="cta" href="mailto:sabar2001@gmail.com?subject=FairPay%20support%20request">Email sabar2001@gmail.com</a>
+      </p>
+      <p class="muted" style="font-size: 14px;">
+        We try to reply within two business days.
+      </p>
+    </header>
+
+    <section aria-labelledby="getting-started">
+      <h2 id="getting-started">Getting started</h2>
+      <div class="card">
+        <p style="margin: 0;">
+          FairPay turns a receipt photo into a clean, per-person split — including a fair share of tax and tip — in a few taps.
+        </p>
+      </div>
+      <ol>
+        <li><strong>Snap or upload</strong> up to 5 photos of your receipt (long receipts are stitched automatically).</li>
+        <li><strong>Cleanup</strong>: review items, tax, and tip. Fix anything OCR got wrong.</li>
+        <li><strong>Split</strong>: assign items to people. Multi-quantity items (e.g. "3 Lassi $18") can be expanded so each unit goes to a different person.</li>
+        <li><strong>Summary</strong>: see every person's total with tax and tip distributed proportionally, then share via the system share sheet.</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="faq">
+      <h2 id="faq">Frequently asked questions</h2>
+
+      <details>
+        <summary>Why did OCR miss or misread an item?</summary>
+        <div class="answer">
+          Receipt photos vary a lot — angle, lighting, faded thermal paper, crumpling, and overlapping rows all reduce accuracy. You can edit, add, or delete any item on the <strong>Cleanup</strong> screen before splitting. Tip: take a top-down photo in even light, and avoid shadows across the totals row.
+        </div>
+      </details>
+
+      <details>
+        <summary>Can I scan a long receipt with more than one photo?</summary>
+        <div class="answer">
+          Yes. Add up to 5 images per receipt. FairPay stitches them and removes duplicate lines that appear on overlapping photos. Each image is resized and compressed on your device before upload (max 2000&nbsp;px, JPEG quality 0.7) so it works on slow connections.
+        </div>
+      </details>
+
+      <details>
+        <summary>How are tax and tip split?</summary>
+        <div class="answer">
+          Each person's tax and tip are scaled to the portion of the subtotal they consumed. If you ordered 30% of the food, you pay 30% of the tax and 30% of the tip — never an even split that punishes light eaters.
+        </div>
+      </details>
+
+      <details>
+        <summary>I got a "daily limit reached" message. Why?</summary>
+        <div class="answer">
+          To keep FairPay free and protect against abuse, each account can scan up to <strong>20 receipts per UTC day</strong>. The counter resets at <code>00:00 UTC</code>. If you have a legitimate need for a higher limit (events, large group trips), email us and we'll work with you.
+        </div>
+      </details>
+
+      <details>
+        <summary>I got a "service temporarily unavailable" message. Why?</summary>
+        <div class="answer">
+          There's a global monthly cap across all FairPay users on the OCR service. If we hit it, scans pause until the start of the next UTC month. This is rare — if you see it more than once, please let us know so we can raise capacity.
+        </div>
+      </details>
+
+      <details>
+        <summary>How do I sign in?</summary>
+        <div class="answer">
+          FairPay supports <strong>email + password</strong>, <strong>Sign in with Google</strong>, and <strong>Sign in with Apple</strong>. If you signed up with one method, use the same method next time — accounts are not automatically merged across providers.
+        </div>
+      </details>
+
+      <details>
+        <summary>I'm not getting the email confirmation link.</summary>
+        <div class="answer">
+          Check your spam folder first. The confirmation message comes from our authentication provider, so it can occasionally be filtered. If you still don't see it after a few minutes, tap "Resend confirmation" on the sign-in screen, or email us and we'll confirm your account manually.
+        </div>
+      </details>
+
+      <details>
+        <summary>What happens to my receipt photos?</summary>
+        <div class="answer">
+          Photos are sent to our backend only to run text extraction, and they are not retained for analytics or marketing. Splits themselves stay on your device. See the <a href="./privacy.html">Privacy Policy</a> for the full data-handling story.
+        </div>
+      </details>
+
+      <details>
+        <summary>Does FairPay work offline?</summary>
+        <div class="answer">
+          You can edit a split and view past totals offline, but scanning a new receipt requires a network connection because the OCR step runs on our servers.
+        </div>
+      </details>
+
+      <details>
+        <summary>What devices are supported?</summary>
+        <div class="answer">
+          iPhone running a currently-supported version of iOS, and Android devices on a currently-supported version of Android. iPad runs in iPhone-compatibility mode for now.
+        </div>
+      </details>
+    </section>
+
+    <section aria-labelledby="account-deletion">
+      <h2 id="account-deletion">Account &amp; data deletion</h2>
+      <p>
+        You can delete your FairPay account and all data associated with it at any time.
+      </p>
+      <ol>
+        <li>Email <a href="mailto:sabar2001@gmail.com?subject=Delete%20my%20FairPay%20account">sabar2001@gmail.com</a> from the address on file, with the subject <em>"Delete my FairPay account"</em>.</li>
+        <li>We confirm the request and complete deletion within <strong>30 days</strong>, typically much sooner.</li>
+        <li>After deletion: your profile, authentication record, and any per-account usage metadata are removed. Aggregate, non-identifying logs (e.g. anonymous error counts) may be retained for security and abuse prevention.</li>
+      </ol>
+      <p class="muted" style="font-size: 14px;">
+        Receipts themselves are not stored long-term, so they are not part of the deletion backlog.
+      </p>
+    </section>
+
+    <section aria-labelledby="bug-report">
+      <h2 id="bug-report">Report a bug or request a feature</h2>
+      <p>The most useful bug reports include:</p>
+      <ul>
+        <li>App version (Settings &rarr; About) and device model</li>
+        <li>iOS or Android version</li>
+        <li>A short description of what you did, what you expected, and what happened</li>
+        <li>A screenshot or screen recording if you can</li>
+      </ul>
+      <p>
+        Send it all to
+        <a href="mailto:sabar2001@gmail.com?subject=FairPay%20bug%20report">sabar2001@gmail.com</a>.
+        Feature ideas welcome at the same address — we read every one.
+      </p>
+    </section>
+
+    <footer>
+      <nav>
+        <a href="./privacy.html">Privacy</a>
+        <a href="mailto:sabar2001@gmail.com">Contact</a>
+      </nav>
+      <span>&copy; <span id="year"></span> FairPay. All rights reserved.</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

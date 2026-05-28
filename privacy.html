@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="description" content="Privacy policy for FairPay, the receipt-splitting app for iOS and Android." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sabar2001.github.io/FairPay-docs/privacy.html" />
+
+  <title>FairPay - Privacy Policy</title>
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #0a0a0a;
+      --muted: #5b5b66;
+      --border: #e6e6ea;
+      --accent: #0f62fe;
+      --card: #f7f7f9;
+      --radius: 14px;
+      --max: 760px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0a0a0a;
+        --fg: #f5f5f7;
+        --muted: #a1a1aa;
+        --border: #1f1f23;
+        --accent: #5b9dff;
+        --card: #131316;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.58;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    main { max-width: var(--max); margin: 0 auto; padding: 32px 20px 80px; }
+    header { padding-top: 12px; padding-bottom: 8px; }
+    h1 { font-size: 32px; line-height: 1.15; margin: 8px 0 4px; letter-spacing: -0.02em; }
+    h2 { font-size: 22px; line-height: 1.25; margin: 40px 0 12px; letter-spacing: -0.01em; }
+    h3 { font-size: 17px; margin: 20px 0 6px; }
+    p, li { color: var(--fg); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover, a:focus { text-decoration: underline; }
+    ul { padding-left: 22px; }
+    ul li + li { margin-top: 6px; }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      padding: 4px 8px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+    }
+    .lede { color: var(--muted); font-size: 18px; margin: 0 0 8px; }
+    .muted { color: var(--muted); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      margin: 18px 0;
+    }
+    footer {
+      margin-top: 56px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    footer nav a { color: var(--muted); margin-right: 14px; }
+
+    .skip {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+    }
+    .skip:focus {
+      left: 16px;
+      top: 16px;
+      background: var(--bg);
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <main id="content">
+    <header>
+      <span class="badge">FairPay Privacy</span>
+      <h1>Privacy Policy</h1>
+      <p class="lede">FairPay helps you split receipts fairly while collecting only the data needed to run the app.</p>
+      <p class="muted">Last updated: May 22, 2026</p>
+    </header>
+
+    <div class="card" role="note" aria-label="Review note">
+      <strong>Please review before publishing.</strong>
+      This policy is drafted from FairPay's current architecture and codebase. It is not legal advice. Confirm the data practices, retention periods, service providers, and contact address before linking it in App Store Connect or Google Play Console.
+    </div>
+
+    <section aria-labelledby="who-we-are">
+      <h2 id="who-we-are">Who We Are</h2>
+      <p>
+        FairPay is a mobile app that scans receipts, extracts line items, and helps groups split bills including tax and tip. For privacy questions, contact
+        <a href="mailto:sabar2001@gmail.com">sabar2001@gmail.com</a>.
+      </p>
+    </section>
+
+    <section aria-labelledby="data-we-collect">
+      <h2 id="data-we-collect">Information We Collect</h2>
+
+      <h3>Account information</h3>
+      <p>
+        When you create or use a FairPay account, we collect authentication information such as your email address and sign-in provider identifiers. If you use Sign in with Google or Sign in with Apple, those providers may share basic account identifiers needed to authenticate you.
+      </p>
+
+      <h3>Receipt images and extracted text</h3>
+      <p>
+        When you scan a receipt, FairPay sends the receipt image or images to our backend so text can be extracted and turned into bill items. Receipt images may include restaurant names, transaction details, item names, prices, tax, tip, and other text visible on the receipt.
+      </p>
+
+      <h3>Split data you enter</h3>
+      <p>
+        You may enter names, edit line items, assign items to people, and adjust tax or tip. This split data is used to calculate totals and produce share text. The current app stores this bill-splitting state locally on your device during use.
+      </p>
+
+      <h3>Usage and security metadata</h3>
+      <p>
+        We record limited usage metadata, such as a user identifier and timestamp for receipt-processing attempts, to enforce daily and monthly OCR limits, prevent abuse, and operate the service.
+      </p>
+
+      <h3>Support messages</h3>
+      <p>
+        If you email us, we receive your email address and any information you choose to include in the message, such as screenshots, device details, or a description of the problem.
+      </p>
+    </section>
+
+    <section aria-labelledby="how-we-use">
+      <h2 id="how-we-use">How We Use Information</h2>
+      <ul>
+        <li>To authenticate your account and keep you signed in securely.</li>
+        <li>To process receipt images and extract item, tax, and tip information.</li>
+        <li>To calculate each person's fair share of a bill.</li>
+        <li>To enforce rate limits, prevent abuse, troubleshoot errors, and keep the service reliable.</li>
+        <li>To respond to support requests and improve the app.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="providers">
+      <h2 id="providers">Service Providers</h2>
+      <p>
+        FairPay relies on third-party service providers to operate core app features:
+      </p>
+      <ul>
+        <li><strong>Supabase</strong> for authentication, backend functions, and database services.</li>
+        <li><strong>Google Gemini / Google AI services</strong> for receipt text extraction.</li>
+        <li><strong>Google Sign-In</strong>, if you choose to sign in with Google.</li>
+        <li><strong>Apple Sign-In</strong>, if you choose to sign in with Apple.</li>
+        <li><strong>Apple App Store and Google Play</strong> for app distribution, crash reporting or diagnostics provided by the platform, and purchase-related platform operations if applicable.</li>
+      </ul>
+      <p>
+        These providers process information according to their own terms and privacy policies. We do not sell your personal information.
+      </p>
+    </section>
+
+    <section aria-labelledby="sharing">
+      <h2 id="sharing">Sharing and Disclosure</h2>
+      <p>
+        We do not sell your personal information. We may share information with service providers that help us operate FairPay, when required by law, to protect FairPay or users from abuse, or as part of a business transfer such as a merger or acquisition.
+      </p>
+      <p>
+        When you use the Summary screen's share feature, FairPay opens your device's native share sheet. You choose the recipient and app. The shared split summary is controlled by you and by the app or service you choose to send it through.
+      </p>
+    </section>
+
+    <section aria-labelledby="retention">
+      <h2 id="retention">Retention</h2>
+      <p>
+        Receipt images are used to perform OCR and are not retained for analytics or marketing. Account records are kept while your account is active. Usage metadata may be retained as needed for rate limiting, fraud prevention, security, and service reliability. Support emails are retained as long as reasonably needed to respond and keep support records.
+      </p>
+    </section>
+
+    <section aria-labelledby="deletion">
+      <h2 id="deletion">Account Deletion</h2>
+      <p>
+        You can request deletion of your FairPay account and associated data by emailing
+        <a href="mailto:sabar2001@gmail.com?subject=Delete%20my%20FairPay%20account">sabar2001@gmail.com</a>
+        from the address on your account with the subject "Delete my FairPay account."
+      </p>
+      <p>
+        We will confirm and complete deletion within 30 days, typically much sooner. Some limited records may be retained if necessary for security, legal compliance, fraud prevention, or resolving disputes.
+      </p>
+    </section>
+
+    <section aria-labelledby="children">
+      <h2 id="children">Children's Privacy</h2>
+      <p>
+        FairPay is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided personal information to FairPay, contact us and we will take appropriate steps to delete it.
+      </p>
+    </section>
+
+    <section aria-labelledby="security">
+      <h2 id="security">Security</h2>
+      <p>
+        We use reasonable technical and organizational measures to protect information, including provider-managed authentication and server-side processing for OCR. No method of transmission or storage is perfectly secure, so we cannot guarantee absolute security.
+      </p>
+    </section>
+
+    <section aria-labelledby="changes">
+      <h2 id="changes">Changes to This Policy</h2>
+      <p>
+        We may update this policy as FairPay changes. If the changes are material, we will update the date above and may provide additional notice in the app or on this page.
+      </p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p>
+        Questions, deletion requests, and privacy requests can be sent to
+        <a href="mailto:sabar2001@gmail.com">sabar2001@gmail.com</a>.
+      </p>
+    </section>
+
+    <footer>
+      <nav>
+        <a href="./support.html">Support</a>
+        <a href="mailto:sabar2001@gmail.com">Contact</a>
+      </nav>
+      <span>&copy; <span id="year"></span> FairPay. All rights reserved.</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
