@@ -15,7 +15,7 @@ if [[ ! -f "${SSH_KEY}" ]]; then
   echo "Generating SSH key at ${SSH_KEY} ..."
   mkdir -p "${HOME}/.ssh"
   chmod 700 "${HOME}/.ssh"
-  ssh-keygen -t ed25519 -C "sabarnimmagadda@gmail.com" -f "${SSH_KEY}" -N ""
+  ssh-keygen -t ed25519 -C "fairpay-support@nimtech.xyz" -f "${SSH_KEY}" -N ""
 fi
 
 if ! grep -q "Host github.com" "${SSH_CONFIG}" 2>/dev/null; then
