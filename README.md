@@ -7,8 +7,10 @@ Static pages for **App Store / Google Play** required URLs and **Supabase Auth**
 | Page | URL |
 |------|-----|
 | Home | https://sabar2001.github.io/FairPay-docs/ |
+| Marketing | https://sabar2001.github.io/FairPay-docs/marketing.html |
 | Support | https://sabar2001.github.io/FairPay-docs/support.html |
 | Privacy | https://sabar2001.github.io/FairPay-docs/privacy.html |
+| Terms | https://sabar2001.github.io/FairPay-docs/terms.html |
 | Auth callback | https://sabar2001.github.io/FairPay-docs/auth-callback.html |
 
 ## One-time GitHub setup

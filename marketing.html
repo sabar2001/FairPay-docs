@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="description" content="FairPay marketing page with core app value, visuals, key features, and policy links." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://docs.fairpay.nimtech.xyz/marketing.html" />
+
+  <title>FairPay - Marketing</title>
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #0a0a0a;
+      --muted: #5b5b66;
+      --border: #e6e6ea;
+      --accent: #0f62fe;
+      --card: #f7f7f9;
+      --radius: 14px;
+      --max: 920px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0a0a0a;
+        --fg: #f5f5f7;
+        --muted: #a1a1aa;
+        --border: #1f1f23;
+        --accent: #5b9dff;
+        --card: #131316;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.58;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    main { max-width: var(--max); margin: 0 auto; padding: 32px 20px 80px; }
+    header { padding-top: 12px; padding-bottom: 10px; }
+    h1 { font-size: 38px; line-height: 1.12; margin: 6px 0 8px; letter-spacing: -0.02em; }
+    h2 { font-size: 24px; line-height: 1.25; margin: 36px 0 12px; letter-spacing: -0.01em; }
+    p, li { color: var(--fg); }
+    ul { padding-left: 22px; }
+    ul li + li { margin-top: 8px; }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover, a:focus { text-decoration: underline; }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      padding: 4px 8px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+    }
+    .lede {
+      color: var(--muted);
+      font-size: 20px;
+      margin: 0;
+      max-width: 720px;
+    }
+
+    .asset-grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 14px;
+    }
+    .asset-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      min-height: 260px;
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .video-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+      margin-top: 14px;
+    }
+    .video-frame {
+      border: 1px dashed var(--border);
+      border-radius: 10px;
+      padding: 30px 16px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .links {
+      margin-top: 24px;
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--card);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    footer {
+      margin-top: 56px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    footer nav a { color: var(--muted); margin-right: 14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="badge">FairPay Marketing</span>
+      <h1>Split every receipt fairly in seconds.</h1>
+      <p class="lede">FairPay scans receipts and calculates each person's true share, including tax and tip, so everyone pays exactly what they owe.</p>
+    </header>
+
+    <section aria-labelledby="screenshots-video">
+      <h2 id="screenshots-video">App screenshots or demo video</h2>
+      <p>Add 2-3 current app screenshots below (recommended), or replace the video placeholder with a short demo link/video embed.</p>
+      <div class="asset-grid">
+        <div class="asset-card">Screenshot slot 1<br />Cleanup and OCR results</div>
+        <div class="asset-card">Screenshot slot 2<br />Item assignment and split flow</div>
+        <div class="asset-card">Screenshot slot 3<br />Final per-person totals</div>
+      </div>
+      <div class="video-card">
+        <div class="video-frame">Optional: 15-30 second demo video slot</div>
+      </div>
+    </section>
+
+    <section aria-labelledby="features">
+      <h2 id="features">Why people use FairPay</h2>
+      <ul>
+        <li><strong>Settle group meals faster:</strong> Turn a receipt photo into a clean split in a few taps.</li>
+        <li><strong>Avoid overpaying:</strong> Tax and tip are allocated proportionally instead of split evenly.</li>
+        <li><strong>Handle messy receipts:</strong> Stitch multiple photos for long receipts and remove duplicate lines.</li>
+        <li><strong>Fix OCR instantly:</strong> Edit items, prices, tax, and tip before finalizing totals.</li>
+        <li><strong>Share results anywhere:</strong> Send each person's total through your phone's native share sheet.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="legal-links">
+      <h2 id="legal-links">Privacy and terms</h2>
+      <p>For compliance and transparency, review the legal pages:</p>
+      <div class="links">
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms of Use</a>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./support.html">Support</a>
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+      </nav>
+      <span>&copy; <span id="year"></span> FairPay. All rights reserved.</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
