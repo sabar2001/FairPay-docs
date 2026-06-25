@@ -82,28 +82,44 @@
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      min-height: 260px;
-      padding: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: var(--muted);
-      font-size: 15px;
+      padding: 12px;
+      margin: 0;
     }
-
+    .asset-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #000;
+    }
+    .asset-card figcaption {
+      margin-top: 8px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .asset-link {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 13px;
+    }
     .video-card {
+      margin-top: 14px;
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 14px;
-      margin-top: 14px;
+      padding: 12px;
     }
-    .video-frame {
-      border: 1px dashed var(--border);
+    .video-card video {
+      width: 100%;
+      display: block;
       border-radius: 10px;
-      padding: 30px 16px;
-      text-align: center;
+      border: 1px solid var(--border);
+      background: #000;
+    }
+    .video-help {
+      margin-top: 8px;
+      font-size: 14px;
       color: var(--muted);
     }
 
@@ -143,14 +159,59 @@
 
     <section aria-labelledby="screenshots-video">
       <h2 id="screenshots-video">App screenshots or demo video</h2>
-      <p>Add 2-3 current app screenshots below (recommended), or replace the video placeholder with a short demo link/video embed.</p>
-      <div class="asset-grid">
-        <div class="asset-card">Screenshot slot 1<br />Cleanup and OCR results</div>
-        <div class="asset-card">Screenshot slot 2<br />Item assignment and split flow</div>
-        <div class="asset-card">Screenshot slot 3<br />Final per-person totals</div>
-      </div>
+      <p>Short demo video plus current app screenshots in product flow order:</p>
       <div class="video-card">
-        <div class="video-frame">Optional: 15-30 second demo video slot</div>
+        <video controls playsinline preload="metadata" poster="./assets/intro-screen.png">
+          <source src="./assets/fairpay-demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-help">
+          <a class="asset-link" href="./assets/fairpay-demo.mp4" target="_blank" rel="noopener noreferrer">Open video in a new tab</a>
+          <br />
+          Demo length: approximately 30 seconds.
+        </div>
+      </div>
+      <div class="asset-grid">
+        <figure class="asset-card">
+          <img src="./assets/intro-screen.png" alt="FairPay intro screen with scan receipt and upload actions." />
+          <figcaption>
+            1) Intro: start with Scan Receipt or Upload from Photo Library.
+            <br />
+            <a class="asset-link" href="./assets/intro-screen.png" target="_blank" rel="noopener noreferrer">Open full image</a>
+          </figcaption>
+        </figure>
+        <figure class="asset-card">
+          <img src="./assets/review-receipt.png" alt="Review Receipt screen with group members and extracted items." />
+          <figcaption>
+            2) Review: verify OCR items and add your group.
+            <br />
+            <a class="asset-link" href="./assets/review-receipt.png" target="_blank" rel="noopener noreferrer">Open full image</a>
+          </figcaption>
+        </figure>
+        <figure class="asset-card">
+          <img src="./assets/tip-screen.png" alt="Receipt totals with subtotal, tax, tip presets, and total amount." />
+          <figcaption>
+            3) Tip and totals: adjust tip and confirm the final total.
+            <br />
+            <a class="asset-link" href="./assets/tip-screen.png" target="_blank" rel="noopener noreferrer">Open full image</a>
+          </figcaption>
+        </figure>
+        <figure class="asset-card">
+          <img src="./assets/item-split-screen.png" alt="Split Items screen showing assignments and per-item split totals." />
+          <figcaption>
+            4) Split Items: assign each line item to the right people.
+            <br />
+            <a class="asset-link" href="./assets/item-split-screen.png" target="_blank" rel="noopener noreferrer">Open full image</a>
+          </figcaption>
+        </figure>
+        <figure class="asset-card">
+          <img src="./assets/bill-split-screen.png" alt="Bill Split Complete screen showing each person amount owed." />
+          <figcaption>
+            5) Results: view what everyone owes and share instantly.
+            <br />
+            <a class="asset-link" href="./assets/bill-split-screen.png" target="_blank" rel="noopener noreferrer">Open full image</a>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
