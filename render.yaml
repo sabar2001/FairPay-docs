@@ -1,0 +1,13 @@
+# FairPay-docs static site (Render). Ensures Apple accepts universal-link AASA file.
+services:
+  - type: web
+    name: fairpay-docs
+    runtime: static
+    staticPublishPath: .
+    headers:
+      - path: /.well-known/apple-app-site-association
+        name: Content-Type
+        value: application/json
+      - path: /apple-app-site-association
+        name: Content-Type
+        value: application/json
